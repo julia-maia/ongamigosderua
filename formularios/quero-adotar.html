@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quero Adotar</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #FDF3DE;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            margin-top: 25px;
+            font-size: 20px;
+        }
+
+        h3 {
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-top: 8px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .group {
+            margin-bottom: 20px;
+        }
+
+        .options {
+            margin-top: 10px;
+        }
+
+        .options label {
+            margin-left: 6px;
+            margin-right: 20px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background: #4CAF50;
+            border: none;
+            padding: 14px;
+            font-size: 16px;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+
+    <form action="" method="post" name="formulario_adocao">
+
+        <h1>Quero adotar!</h1>
+
+        <div class="group">
+            <h2>Nome completo</h2>
+            <input type="text" name="nome" placeholder="Digite o seu nome completo" required>
+        </div>
+
+        <div class="group">
+            <h2>Telefone</h2>
+            <input type="text" name="telefone" placeholder="Digite o seu telefone" required>
+        </div>
+
+        <div class="group">
+            <h2>CPF</h2>
+            <input type="text" name="cpf" placeholder="Digite o seu CPF" required>
+        </div>
+
+        <div class="group">
+            <h2>Endereço</h2>
+            <input type="text" name="endereco" placeholder="Digite o seu endereço completo" required>
+        </div>
+
+        <div class="group">
+            <h2>Composição familiar</h2>
+
+            <h3>Há crianças?</h3>
+            <div class="options">
+                <input type="radio" name="ha_criancas" value="Sim"> <label>Sim</label>
+                <input type="radio" name="ha_criancas" value="Não"> <label>Não</label>
+            </div>
+
+            <h3>Tem outros animais?</h3>
+            <div class="options">
+                <input type="radio" name="tem_outros_animais" value="Sim"> <label>Sim</label>
+                <input type="radio" name="tem_outros_animais" value="Não"> <label>Não</label>
+            </div>
+
+            <input type="text" name="detalhes_animais" placeholder="Se sim, quantos animais?">
+            <input type="text" name="cachorro" placeholder="Quantidade de cachorros">
+            <input type="text" name="cachorro_castrado" placeholder="Cachorros castrados?">
+            <input type="text" name="gato" placeholder="Quantidade de gatos">
+            <input type="text" name="gato_castrado" placeholder="Gatos castrados?">
+        </div>
+
+        <div class="group">
+            <h2>FIV/FELV</h2>
+            <div class="options">
+                <input type="radio" name="fiv_felv" value="Positivo"> <label>Positivo</label>
+                <input type="radio" name="fiv_felv" value="Negativo"> <label>Negativo</label>
+                <input type="radio" name="fiv_felv" value="Nunca testado"> <label>Nunca testado</label>
+            </div>
+        </div>
+
+        <div class="group">
+            <h2>Local do animal que será adotado</h2>
+            <div class="options">
+                <input type="radio" name="local" value="Pátio"> <label>Pátio</label>
+                <input type="radio" name="local" value="Casa"> <label>Casa</label>
+            </div>
+        </div>
+
+        <div class="group">
+            <h2>Interesse de adoção</h2>
+            <div class="options">
+                <input type="checkbox" name="tipo_animal" value="Cachorro"> <label>Cachorro</label>
+                <input type="checkbox" name="tipo_animal" value="Gato"> <label>Gato</label>
+            </div>
+        </div>
+
+        <div class="group">
+            <h2>Preferência de porte</h2>
+            <div class="options">
+                <input type="checkbox" name="porte_animal" value="P"> <label>P</label>
+                <input type="checkbox" name="porte_animal" value="M"> <label>M</label>
+                <input type="checkbox" name="porte_animal" value="G"> <label>G</label>
+            </div>
+        </div>
+
+        <div class="group">
+            <h2>Preferência por idade</h2>
+            <div class="options">
+                <input type="checkbox" name="idade" value="Filhote"> <label>Filhote</label>
+                <input type="checkbox" name="idade" value="Adulto"> <label>Adulto</label>
+            </div>
+        </div>
+
+        <div class="group">
+            <h2>Mais informações</h2>
+            <textarea name="mais_informacoes" rows="6" placeholder="Escreva aqui mais informações que achar relevante"></textarea>
+        </div>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</div>
+
+</body>
+</html>

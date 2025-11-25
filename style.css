@@ -153,6 +153,106 @@ section {
   height: 220px;
 }
 
+.address {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.info {
+  max-width: 250px;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.info h3 {
+  color: #FF7C2D;
+}
+
+.footer {
+  background-color: #753987;
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-box h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-box il {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 5px;
+  list-style: none;
+}
+
+.footer-box ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-box p {
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.social-icons {
+  margin-right: 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.instagram-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  text-align: center;
+  gap: 40px;
+}
+
+.insta-box {
+  max-width: 350px;
+}
+
+.insta-box .icon {
+  font-size: 35px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.insta-box strong {
+  display: block;
+  margin-top: 10px;
+}
+
+.credits {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+
+
 
 
 
