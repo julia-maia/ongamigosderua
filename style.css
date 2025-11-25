@@ -82,7 +82,7 @@ section {
   color: var(--cinza);
   font-weight: 500;
   white-space: nowrap;
-  padding: 0.5rem 0;
+  /* padding: 0.5rem 0; */
 }
 
 .navbar .botao {
